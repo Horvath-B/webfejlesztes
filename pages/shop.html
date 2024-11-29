@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cat Shop</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header></header>
+    <nav class="dropdown">
+        <button>Dropdown button</button>
+        <div>
+            <a href="main.html">Garden</a>
+            <a href="#">Shop</a>
+            <a href="test.html">Test</a>
+            <a href="../index.html">Log out</a>
+        </div>
+    </nav>
+    <section id="shop">
+        <div class="shop_menu">
+            <input type="button" onclick="show_cats()" class="b_cats" value="Cats">
+            <input type="button" onClick="show_habitats()" class="b_habitats" value="Habitats">
+        </div>
+        <div class="shop_elements">
+            <div id="s_cats">
+                Cats
+            </div>
+            <div id="s_habitats">
+                Habitats
+            </div>
+        </div>
+    </section>
+    <script>
+        function show_cats(){
+            document.getElementById("s_cats").style.display = "flex";
+            document.getElementById("s_habitats").style.display = "none";
+        }
+        function show_habitats(){
+            document.getElementById("s_cats").style.display = "none";
+            document.getElementById("s_habitats").style.display = "flex";
+        }
+    </script>
+</body>
+</html>

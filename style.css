@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+body{
+    display: flex;
+    background-color: aquamarine;
+    margin: 0;
+    flex-direction: column;
+}
+
+nav.dropdown{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /*background-image: url("/images/menu_icon.svg");*/
+}
+.dropdown button{
+    cursor: pointer;
+    background-color:cornflowerblue;
+    border: none;
+    width: 100%;
+    height: 100%;
+    /*
+    min-width: 50px;
+    min-height: 50px;*/
+}
+.dropdown div{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 100px;
+    background-color: rgb(147, 174, 225);
+}
+.dropdown div a{
+    display: block;
+}
+.dropdown:hover div{
+    display: block;
+}
+
+/*SHOP*/
+#shop{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.shop_menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.shop_menu .b_cats, .shop_menu .b_habitats{
+    width: 48%;
+    margin: 1%;
+    border: none;
+}
+.shop_elements{
+    width: 100%;
+}
+.shop_elements #s_habitats{
+    display: none;
+    width: 50%;
+}
+
+/*    GAME    */
+.game_head{
+    width: 80%;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+}
+.game_head div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#game{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    min-width: 300px;
+    min-height: 300px;
+    margin:auto;
+    max-height: 800px;
+    max-width: 800px;    
+}
+.game_box{
+    height: 33%;
+    width: 33%;    
+    border: 2px solid black;
+    display: flex;
+    align-content: center;
+}
+.game_box img{
+    width: 100%;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacsKaland</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        div#cat_pic{
+            background-image: "../images/cat.svg";
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav class="dropdown">
+        <button>Menu</button>
+        <div>
+            <a href="#">Kert</a>
+            <a href="shop.html">Bolt</a>
+            <a href="minigame.html">Játék</a>
+            <a href="../index.html">Kijelentkezés</a>
+        </div>
+    </nav>
+    <section id="garden">
+        <img src="../images/cat1.svg" alt="This is your cat." id="cat_pic">
+        <input type="button" value="Change cat skin" onclick="c_c_s()">
+        <div id="cat_changer" style="display: none;">
+            <input type="button" onclick="cat_prev()" value="Previous">
+            <input type="button" onclick="cat_next()" value="Next">
+        </div>        
+    </section>
+    <script>
+        let num = 1;
+        function cat_next(){
+            num = num + 1;
+            if(num>10) num = 1;
+            document.getElementById("cat_pic").src=`../images/cat${num}.svg`
+        }
+        function cat_prev(){
+            num = num - 1;
+            if(num==0) num = 10;
+            document.getElementById("cat_pic").src=`../images/cat${num}.svg`
+        }
+        function c_c_s(){
+            document.getElementById("cat_changer").style.display = "flex";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Minijáték</title>
+</head>
+<body>
+    <nav class="dropdown">
+        <button>Menü</button>
+        <div>
+            <a href="main.html">Kert</a>
+            <a href="shop.html">Bolt</a>
+            <a href="#">Játék</a>
+            <a href="../index.html">Kijelentkezés</a>
+        </div>
+    </nav>
+    <section class="game_head">
+        <p>A játék célja, hogy minél több egeret elkapjunk. A start gomb megnyomása után véletlenszerűen fognak felbukkanni és egyre kevesebb idő lesz elkapni őket.</p>
+        <div>
+            <div id="health_text">Élet:  5</div>
+            <div id="point_text">Pont: 0</div>
+            <input type="button" value="Start" id="game_start">
+        </div>        
+    </section>
+    <section id="game">
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse1">
+        </div>
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse2">
+        </div>
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse3">
+        </div>
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse4">
+        </div>
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse5">
+        </div>
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse6">
+        </div>
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse7">
+        </div>
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse8">
+        </div>
+        <div class="game_box">
+            <img src="../images/empty.svg" alt="egér" id="mouse9">
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

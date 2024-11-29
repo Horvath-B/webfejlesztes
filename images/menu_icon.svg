@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="25"
+   height="25"
+   viewBox="0 0 6.6145835 6.6145835"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="menu_icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:clip-to-page="false"
+     inkscape:zoom="22.627417"
+     inkscape:cx="11.313708"
+     inkscape:cy="15.003922"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <color-profile
+       name="Agfa-:-Swop-Standard"
+       xlink:href="../../../../../../Windows/system32/spool/drivers/color/RSWOP.icm"
+       id="color-profile2" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1"
+     style="display:inline;mix-blend-mode:normal;fill:none;fill-opacity:1">
+    <rect
+       style="fill:#2d00b9;fill-opacity:1;fill-rule:nonzero;stroke:#2d00b9;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1"
+       width="4.4556251"
+       height="0.11997969"
+       x="1.0895178"
+       y="1.4245822" />
+    <rect
+       style="fill:#2d00b9;fill-opacity:1;fill-rule:nonzero;stroke:#2d00b9;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect2"
+       width="4.4556251"
+       height="0.11997969"
+       x="1.0895178"
+       y="1.4245822" />
+    <rect
+       style="mix-blend-mode:normal;fill:#2d00b9;fill-opacity:1;fill-rule:nonzero;stroke:#2d00b9;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect2-2"
+       width="4.4556251"
+       height="0.11997969"
+       x="1.0869923"
+       y="5.0275474" />
+    <rect
+       style="mix-blend-mode:normal;fill:#2d00b9;fill-opacity:1;fill-rule:nonzero;stroke:#2d00b9;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect2-8"
+       width="4.4556251"
+       height="0.11997969"
+       x="1.0824095"
+       y="3.2550137" />
+  </g>
+</svg>
