@@ -96,3 +96,16 @@ nav.dropdown{
 .game_box img{
     width: 100%;
 }
+#game_end{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    width: 30vw;
+    height: 20vh;
+    margin: 40vh 35vw;
+    text-align: center;
+    border: 2px solid darkgray;
+    background-color: gray;
+    padding-top: 5vh;
+    font-size: 2vh;
+}
