@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header></header>
-    <nav class="dropdown">
-        <button>Dropdown button</button>
-        <div>
-            <a href="main.html">Garden</a>
-            <a href="#">Shop</a>
-            <a href="test.html">Test</a>
-            <a href="../index.html">Log out</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="dropdown">
+            <button>Menü</button>
+            <div>
+                <a href="#">Kert</a>
+                <a href="shop.html">Bolt</a>
+                <a href="minigame.html">Játék</a>
+                <a href="../index.html">Kijelentkezés</a>
+            </div>
+        </nav>
+        <ul>
+            <li><p>Cirmi</p></li>
+            <li><img src="../images/food_icon.svg" alt="ikon"><p class="mobil">Éhség: </p><p>80%</p></li>
+            <li><img src="../images/happiness_icon.svg" alt="ikon"><p class="mobil">Hangulat: </p><p>76%</p></li>
+            <li><img src="../images/coin_icon.svg" alt="ikon"><p class="mobil">Pénz: </p><p>547</p></li>
+        </ul>
+    </header>
     <section id="shop">
         <div class="shop_menu">
             <input type="button" onclick="show_cats()" class="b_cats" value="Cats">

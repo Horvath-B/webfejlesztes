@@ -62,12 +62,7 @@ header ul li{
     height: 50px;
     display: flex;
     flex-direction: row;
-    background-color:cadetblue;
-}
-
-header ul li span{
-    margin: 0;
-    padding: 10px 0;
+    background-color:cadetblue;    
 }
 
 header ul .mobil{
@@ -123,8 +118,8 @@ header ul li img{
     min-width: 300px;
     min-height: 300px;
     margin:auto;
-    max-height: 800px;
-    max-width: 800px;    
+    max-height: 75vh; /*800px-re állítani ha nem működne*/
+    max-width: 75vh;    
 }
 .game_box{
     height: 33%;
