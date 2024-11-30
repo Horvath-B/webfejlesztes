@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebMacska</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        div#cat_pic{
-            background-image: "../images/cat.svg";
-        }
-    </style>
 </head>
 <body>
-    <header></header>
-    <nav class="dropdown">
-        <button>Menu</button>
-        <div>
-            <a href="#">Kert</a>
-            <a href="shop.html">Bolt</a>
-            <a href="minigame.html">Játék</a>
-            <a href="../index.html">Kijelentkezés</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="dropdown">
+            <button>Menü</button>
+            <div>
+                <a href="#">Kert</a>
+                <a href="shop.html">Bolt</a>
+                <a href="minigame.html">Játék</a>
+                <a href="../index.html">Kijelentkezés</a>
+            </div>
+        </nav>
+        <ul>
+            <li><p>Cirmi</p></li>
+            <li><img src="../images/food_icon.svg" alt="ikon"><p class="mobil">Éhség: </p><p>80%</p></li>
+            <li><img src="../images/happiness_icon.svg" alt="ikon"><p class="mobil">Hangulat: </p><p>:76%</p></li>
+            <li><img src="../images/coin_icon.svg" alt="ikon"><p class="mobil">Pénz: </p><p>547</p></li>
+            <li><p>kisJanos12</p></li>
+        </ul>
+    </header>
+    
     <section id="garden">
         <img src="../images/cat1.svg" alt="This is your cat." id="cat_pic">
         <input type="button" value="Change cat skin" onclick="c_c_s()">
