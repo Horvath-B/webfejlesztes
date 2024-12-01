@@ -1,7 +1,3 @@
-/*@font-face {
-    font-family: "DP";
-    src: url(/fonts/DynaPuff-Medium.ttf);
-}*/
 *{
     box-sizing: border-box;
     flex-wrap: wrap;
@@ -15,7 +11,7 @@ body{
     flex-direction: column;
     font-family: 'DP';
     align-items: center;
-    min-height: 100vh; /*footer mindig alul: https://www.30secondsofcode.org/css/s/footer-at-the-bottom/*/
+    min-height: 100%; /*footer mindig alul: https://www.30secondsofcode.org/css/s/footer-at-the-bottom/*/
 }
 a{text-decoration: none;}
 a:visited{color: #ECEDF0;}
@@ -87,7 +83,7 @@ header{
     flex-direction: row;
     font-family: 'DP';
     background-color: #5C76CC;
-    width: 100vw;
+    width: 100%;
     align-items: center;
 }
 .logo img{
@@ -131,6 +127,56 @@ header ul li img{
     margin: 6px 0;
     
 }
+
+/*MAIN*/
+#garden{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    background-color: #BBCBFF;
+    border-radius: 10px;
+}
+#garden input{font-family: 'DP';font-size: 12px;background-color: #21273C;color: #ECEDF0; border-radius: 5px; }
+/*#garden div{border: #21273C solid 1px;}*/
+#g_e{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+    #g_e_1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+        #cat{
+            width: 60%;
+        }
+        #cat_pic{width: 100%;}
+        #food{
+            width:40%
+        }
+    #g_e_2{
+        width: 100%;
+    }
+        #hab_pic{width: 100%;}
+#g_b_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+}
+#g_b_2{
+    width: 100%;
+    padding: 1%;
+}
+    #g_b_2_1, #g_b_2_2{
+        width: 100%;
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*#c_prev, #c_next, #h_prev, #h_next{display: none;}*/
 
 /*SHOP*/
 #shop{
@@ -343,7 +389,7 @@ footer{
     width: 100%;
     
     margin: 20% 0 0 0;
-    margin-top: auto;
+    margin-top: 10%;
     background-color: #21273C;
     color: #ECEDF0;
     font-size: 11px;
@@ -444,6 +490,11 @@ footer .outer{
         width: 23%;
         text-align: center;
     }
+
+    /*MAIN*/
+    #g_e{width: 75%;}
+    #g_b_1{width: 25%;flex-direction: column;}
+
     /*SHOP*/
     
     .shop_menu{
