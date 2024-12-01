@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +12,32 @@
     }</style>
 </head>
 <body>
-    <section>
+    <section class="f_logo">
         <img src="images/logo.svg" alt="logo">
         <p>WebMacska</p>
     </section>
     <form action="pages/main.html" method="get"> <!--https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link-->
-        <label>Felhasználónév: <input type="text" name="username"><br></label>
-        <label>Jelszó<input type="password" name="password"><br></label>
-        <input type="submit" value="Bejelentkezés"><br>        
+        <label for="username">Felhasználónév:</label><input type="text" name="username" id="username" class="arial">
+        <label for="password">Jelszó:</label><input type="password" name="password" id="password" class="arial">
+        <input type="submit" value="Bejelentkezés" class="bttn"><br>        
     </form>
-    <p>
+    <p class="pp">
         <a href="pages/forgotten_password.html" class="aa">Elfelejtett jelszó</a><br>
         <a href="pages/registration.html" class="aa">Felhasználó létrehozása</a>
     </p>
     <footer>
-        #lábjegyzet
+        <div class="outer">
+            <div>Készítette:</div>
+            <div>Horváth Bence</div>
+        </div>
+        <div class="outer">
+            <div>E-mail:</div>
+            <div>bence.horvath5@ stud.uni-corvinus.hu</div>
+        </div>
+        <div class="outer">
+            <div>Copyright (C):</div>
+            <div>GNU AFFERO GENERAL PUBLIC LICENSE</div>
+        </div>
     </footer>
 </body>
 </html>

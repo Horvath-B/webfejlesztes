@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,13 +21,13 @@
             <div>
                 <a href="#" id="current">Kert</a>
                 <a href="shop.html">Bolt</a>
-                <a href="minigame.html">Játék</a>
+                <a href="minigame.html">Egérfogó</a>
                 <a href="../index.html">Kijelentkezés</a>
             </div>
         </nav>
         <ul>
             <li><p>Cirmi</p></li>
-            <li><img src="../images/food_icon.svg" alt="ikon"><p class="mobil">Éhség: </p><p>80%</p></li>
+            <li><img src="../images/food_icon.svg" alt="ikon"><p class="mobil">Éhség: </p><p> 80%</p></li>
             <li><img src="../images/happiness_icon.svg" alt="ikon"><p class="mobil">Hangulat: </p><p>76%</p></li>
             <li><img src="../images/coin_icon.svg" alt="ikon"><p class="mobil">Pénz: </p><p>547</p></li>
         </ul>
@@ -35,27 +35,26 @@
     
     <section id="garden">
         <img src="../images/cat1.svg" alt="This is your cat." id="cat_pic">
-        <input type="button" value="Change cat skin" onclick="c_c_s()">
+        <input type="button" value="Change cat skin" id="c_c_s">
         <div id="cat_changer" style="display: none;">
-            <input type="button" onclick="cat_prev()" value="Previous">
-            <input type="button" onclick="cat_next()" value="Next">
+            <input type="button" value="Previous" id="c_prev">
+            <input type="button" onclick="cat_next()" value="Next" id="c_next">
         </div>        
     </section>
-    <script>
-        let num = 1;
-        function cat_next(){
-            num = num + 1;
-            if(num>10) num = 1;
-            document.getElementById("cat_pic").src=`../images/cat${num}.svg`
-        }
-        function cat_prev(){
-            num = num - 1;
-            if(num==0) num = 10;
-            document.getElementById("cat_pic").src=`../images/cat${num}.svg`
-        }
-        function c_c_s(){
-            document.getElementById("cat_changer").style.display = "flex";
-        }
-    </script>
+    <footer>
+        <div class="outer">
+            <div>Készítette:</div>
+            <div>Horváth Bence</div>
+        </div>
+        <div class="outer">
+            <div>E-mail:</div>
+            <div>bence.horvath5@ stud.uni-corvinus.hu</div>
+        </div>
+        <div class="outer">
+            <div>Copyright (C):</div>
+            <div>GNU AFFERO GENERAL PUBLIC LICENSE</div>
+        </div>
+    </footer>
+    <script src="../scripts/script_main.js"></script>
 </body>
 </html>

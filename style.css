@@ -15,6 +15,7 @@ body{
     flex-direction: column;
     font-family: 'DP';
     align-items: center;
+    min-height: 100vh; /*footer mindig alul: https://www.30secondsofcode.org/css/s/footer-at-the-bottom/*/
 }
 a{text-decoration: none;}
 a:visited{color: #ECEDF0;}
@@ -38,15 +39,14 @@ nav.dropdown{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    /*
-    min-width: 50px;
-    min-height: 50px;*/
+    font-size: 16px;
 }
+.dropdown button:hover{background-color: #5C76CC;color: #BBCBFF;}
 .dropdown div{
     display: none;
     position: absolute;
     z-index: 1;
-    min-width: 100px;
+    min-width: 150px;
     /*background-color: rgb(147, 174, 225);*/
 }
 .dropdown div a{
@@ -54,6 +54,8 @@ nav.dropdown{
     background-color: #21273C;
     color: #ECEDF0;
     margin: 2%;
+    padding: 5px 0;
+    font-size: 20px;
 }
 
 .dropdown div a:hover{
@@ -86,9 +88,16 @@ header{
     font-family: 'DP';
     background-color: #5C76CC;
     width: 100vw;
+    align-items: center;
 }
 .logo img{
     height: 100%;
+}
+.logo p{
+    margin: 0;
+    font-family: 'DP';
+    font-size: 30px;
+    background-color: #5C76CC;
 }
 
 header ul{
@@ -110,6 +119,7 @@ header ul li{
     background-color: #BBCBFF;
     color: #5C76CC;
     border-radius: 10px;
+    font-size: 16px;
 }
 
 header ul .mobil{
@@ -126,7 +136,10 @@ header ul li img{
 #shop{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 98%;
+    background-color: #BBCBFF;
+    padding-bottom: 1%;
+    border-radius: 10px;
 }
 .shop_menu{
     display: flex;
@@ -135,8 +148,7 @@ header ul li img{
 }
 .shop_menu input{
     font-family: 'PD';
-    /*background-color: #21273C;
-    color: #ECEDF0;*/
+    font-size: 15px;
 }
 .shop_menu #b_cats, .shop_menu #b_habitats{
     width: 48%;
@@ -152,14 +164,6 @@ header ul li img{
     background-color: #5C76CC;
     color: #BBCBFF;
 }
-/*.active{ ha mégis használható lenne ki kell venni az eredeti színeket
-    background-color: #BBCBFF;
-    color: #5C76CC;
-}
-.notactive{
-    background-color: #21273C;
-    color: #ECEDF0;
-}*/
 .shop_elements{
     width: 100%;
 }
@@ -178,6 +182,7 @@ header ul li img{
 .shop_elements input:hover{
     background-color: #BBCBFF;
     color: #5C76CC;
+    cursor: pointer;
 }
 
 /*    GAME    */
@@ -186,6 +191,7 @@ header ul li img{
     min-width: 300px;
     max-width: 800px;
     margin: auto;
+    font-size: 16px;
 }
 .game_head div{
     display: flex;
@@ -196,6 +202,10 @@ header ul li img{
     font-family: 'DP';
     background-color: #21273C;
     color: #ECEDF0;
+    cursor: pointer;}
+.game_head div input:hover{
+    background-color: #5C76CC;
+    color: #BBCBFF;
 }
 #game{
     display: flex;
@@ -219,6 +229,7 @@ header ul li img{
     border-radius: 10%;
     margin:1.5%;
 }
+.game_box:hover{cursor: pointer;}
 .game_box img{
     width: 100%;
 }
@@ -243,8 +254,228 @@ header ul li img{
 .aa, .aa:visited{
     text-decoration: underline;
     color:#BBCBFF;
+    font-size: 20px;
 }
 .aa:hover, .aa:visited:hover{color:#5C76CC}
+
+.f_logo{
+    min-width: 315px;
+    width: 80vw;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0 10% 0;
+}
+.f_logo img{
+    min-height: 100px;
+    height: 15vh;
+}
+.f_logo p{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin:0;
+}
+
 form{
+    min-width: 315px;
+    width: 60vw;
     background-color: #5C76CC;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 3%;
+}
+form label{
+    margin: 1% 0 0 3%;
+}
+form input{
+    font-size: 20px;
+    margin: 0 0 5% 10%;
+    width: 75%;
+    max-width: 300px;
+    border-radius: 5px;
+    background-color: #ECEDF0;
+}
+form input.bttn{
+    font-family: 'DP';
+    background-color: #21273C;
+    color: #ECEDF0;
+    width: fit-content;
+    
+}
+form input.bttn:hover{
+    background-color: #BBCBFF;
+    color: #5C76CC;
+    cursor: pointer;
+}
+.pp{
+    margin: 0 0 3% 5%;
+    line-height: 2em;
+}
+
+#radio_a, #radio_b, #radio_c, #check_a, #check_b, #check_c{
+    margin: 0 0 3% 5%;
+    width:20px;
+}
+.check{
+    font-size: 16px;
+}
+
+form hr{
+    min-width: 300px;
+    width: 94%;
+    color: #21273C;
+    background-color: #21273C;
+    border-width: 0;
+    height: 2px;
+    margin: 0 3%;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+    margin: 20% 0 0 0;
+    margin-top: auto;
+    background-color: #21273C;
+    color: #ECEDF0;
+    font-size: 11px;
+}
+footer .outer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 1.5%;
+}
+@media only screen and (min-width: 600px) {
+    /* tabletre vonatkozó beállítások */
+    header{
+        width: 100%;
+    }
+    header div.logo{
+        order: 1;
+        width:40%;
+        min-width: 249px;
+        max-width: 270px;
+        height: 50px;
+        margin: 1%;
+    }
+    header ul{
+        order: 2;
+        width: 40%;
+        min-width: 245px;
+    }
+    /*SHOP*/
+    .shop_menu{
+        width:10%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .shop_menu #b_cats, .shop_menu #b_habitats{
+        width: 96%;
+        min-width: 100px;
+        margin: 15% 2%;
+    }
+    .shop_elements{
+        width: 85%;
+    }
+
+    /*FORM*/
+    .f_logo{
+        margin: 2% 0 5% 0;
+    }
+    .f_logo img{
+        height: 20vh;
+    }
+    .f_logo p{
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* számítógépre vonatkozó beállítások */
+    header{
+        width: 100%;
+    }
+    header div.logo{
+        order: 1;
+        width:38%;
+        min-width: 249px;
+        height: 50px;
+        margin: 1%;
+    }
+    header ul{
+        order: 2;
+        width: auto;
+        min-width: 60%;
+    }
+    header ul li{
+        min-width: fit-content;
+    }
+    header ul .mobil{display: inline;}
+    header nav.dropdown{
+        order: 3;
+        width: 98%;
+        margin: 1%;
+    }
+    .dropdown button{display: none;}
+    .dropdown div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        border-bottom: #BBCBFF solid 2px;
+    }
+    .dropdown:hover div{
+        display: flex;
+    }
+    .dropdown div a{
+        margin: 0;
+        margin-bottom: 0.5%;
+        padding: 5px;
+        border-radius: 5px;
+        width: 23%;
+        text-align: center;
+    }
+    /*SHOP*/
+    
+    .shop_menu{
+        width:10%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .shop_menu #b_cats, .shop_menu #b_habitats{
+        width: 96%;
+        min-width: 115px;
+        font-size: 20px;
+        margin: 15% 2%;
+    }
+    .shop_elements{
+        width: 85%;
+    }
+
+    /*FORM*/
+    .f_logo{
+        margin: 2% 0 2% 0;
+        max-width: 500px;
+    }
+    .f_logo img{
+        height: 25vh;
+    }
+    .f_logo p{
+        font-size: 60px;
+    }
+    form{        
+        max-width: 500px;        
+    }
+
+    /*FOOTER*/
+    footer{font-size: 13px;}
 }
