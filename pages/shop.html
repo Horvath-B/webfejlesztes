@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <style>
+        @font-face {
+            font-family: "DP";
+            src: url(../fonts/DynaPuff-Medium.ttf);}
+        .slider {
+            width: 80%;
+            min-width: 280px;
+            margin: 100px auto;
+        }
+        .slick-slide {margin: 0px 5px;}
+        .slick-slide img {width: 100%;}
+        .slick-prev:before, .slick-next:before {
+            color: black;
+        }
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+        .slick-active { opacity: .5; }
+        .slick-current { opacity: 1; }
+        </style>
 </head>
-<style>
-    .slider {
-    width: 80%;
-    min-width: 280px;
-    margin: 100px auto;
-    }
-    .slick-slide {margin: 0px 5px;}
-    .slick-slide img {width: 100%;}
-    .slick-prev:before, .slick-next:before {
-    color: black;
-    }
-    .slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .2;
-    }
-    .slick-active { opacity: .5; }
-    .slick-current { opacity: 1; }
-    </style>
+
     
 <body>
     <header>
@@ -37,7 +41,7 @@
             <button>Menü</button>
             <div>
                 <a href="main.html">Kert</a>
-                <a href="#">Bolt</a>
+                <a href="#" id="current">Bolt</a>
                 <a href="minigame.html">Játék</a>
                 <a href="../index.html">Kijelentkezés</a>
             </div>
@@ -51,8 +55,8 @@
     </header>
     <section id="shop">
         <div class="shop_menu">
-            <input type="button" id="b_cats" value="Cats">
-            <input type="button" onClick="show_habitats()" id="b_habitats" value="Habitats">
+            <input type="button" id="b_cats" value="Macskák">
+            <input type="button" onClick="show_habitats()" id="b_habitats" value="Élőhelyek">
         </div>
         <div class="shop_elements">
             <div id="s_cats">
@@ -83,7 +87,7 @@
                     <div><img src="../images/shop/cat2.svg" alt="Macska 2"></div>
                 </section>
             </div>
-            <input type="button" value="Megveszem" style="margin-left: 70%;">
+            <input type="button" value="Megveszem">
         </div>
         
     </section>

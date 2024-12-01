@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebMacska-Bejelentkezés</title>
     <link rel="stylesheet" href="style.css">
-    <meta name=“keywords" content="webmacska"> 
+    <meta name="keywords" content="webmacska">
+    <style>@font-face {
+        font-family: "DP";
+        src: url(fonts/DynaPuff-Medium.ttf);
+    }</style>
 </head>
 <body>
     <section>
         <img src="images/logo.svg" alt="logo">
-        <form action="pages/main.html" method="get"> <!--https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link-->
-            <label>Felhasználónév: <input type="text" name="username"><br></label>
-            <label>Jelszó<input type="password" name="password"><br></label>
-            <input type="submit" value="Bejelentkezés"><br>
-            <a href="pages/forgotten_password.html">Elfelejtett jelszó</a><br>
-            <a href="pages/registration.html">Felhasználó létrehozása</a>
-        </form>
-        <!--<article>
-            This is a demo page, to proceede press <a href="pages/main.html">HERE</a>
-        </article>-->
+        <p>WebMacska</p>
     </section>
+    <form action="pages/main.html" method="get"> <!--https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link-->
+        <label>Felhasználónév: <input type="text" name="username"><br></label>
+        <label>Jelszó<input type="password" name="password"><br></label>
+        <input type="submit" value="Bejelentkezés"><br>        
+    </form>
+    <p>
+        <a href="pages/forgotten_password.html" class="aa">Elfelejtett jelszó</a><br>
+        <a href="pages/registration.html" class="aa">Felhasználó létrehozása</a>
+    </p>
     <footer>
         #lábjegyzet
     </footer>

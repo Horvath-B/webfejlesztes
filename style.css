@@ -9,12 +9,15 @@
 
 body{
     display: flex;
-    background-color: aquamarine;
+    background-color: #082EAA;
+    color: #ECEDF0;
     margin: 0;
     flex-direction: column;
     font-family: 'DP';
+    align-items: center;
 }
 a{text-decoration: none;}
+a:visited{color: #ECEDF0;}
 
 .arial{font-family: Arial, Helvetica, sans-serif;}
 
@@ -23,14 +26,18 @@ nav.dropdown{
     display: inline-block;
     width: 50px;
     height: 50px;
+    margin: 1%;
     /*background-image: url("/images/menu_icon.svg");*/
 }
 .dropdown button{
     cursor: pointer;
-    background-color:cornflowerblue;
+    background-color: #21273C;
+    color: #ECEDF0;
+    font-family: 'DP';
     border: none;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     /*
     min-width: 50px;
     min-height: 50px;*/
@@ -40,19 +47,34 @@ nav.dropdown{
     position: absolute;
     z-index: 1;
     min-width: 100px;
-    background-color: rgb(147, 174, 225);
+    /*background-color: rgb(147, 174, 225);*/
 }
 .dropdown div a{
     display: block;
+    background-color: #21273C;
+    color: #ECEDF0;
+    margin: 2%;
 }
+
+.dropdown div a:hover{
+    background-color: #5C76CC;
+    color: #BBCBFF;
+}
+#current:hover{background-color: #ECEDF0;color: #BBCBFF;}
+
 .dropdown:hover div{
     display: block;
+}
+#current{
+    background-color: #BBCBFF;
+    color: #5C76CC;
 }
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: #ECEDF0;
 }
 
 .logo{
@@ -62,6 +84,8 @@ header{
     display: flex;
     flex-direction: row;
     font-family: 'DP';
+    background-color: #5C76CC;
+    width: 100vw;
 }
 .logo img{
     height: 100%;
@@ -72,7 +96,7 @@ header ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0;
+    margin: 1%;
     width: 80%;
     height: 50px;
     padding: 0;
@@ -82,8 +106,10 @@ header ul li{
     /*width: 16%;*/
     height: 50px;
     display: flex;
-    flex-direction: row;
-    background-color:cadetblue;    
+    flex-direction: row;    
+    background-color: #BBCBFF;
+    color: #5C76CC;
+    border-radius: 10px;
 }
 
 header ul .mobil{
@@ -107,17 +133,51 @@ header ul li img{
     flex-direction: row;
     width: 100%;
 }
+.shop_menu input{
+    font-family: 'PD';
+    /*background-color: #21273C;
+    color: #ECEDF0;*/
+}
 .shop_menu #b_cats, .shop_menu #b_habitats{
     width: 48%;
     margin: 1%;
     border: none;
+    background-color: #21273C;
+    color: #ECEDF0;
+    font-family: 'DP';
+    border-radius: 5px;
 }
+
+.shop_menu #b_cats:hover, .shop_menu #b_habitats:hover{
+    background-color: #5C76CC;
+    color: #BBCBFF;
+}
+/*.active{ ha mégis használható lenne ki kell venni az eredeti színeket
+    background-color: #BBCBFF;
+    color: #5C76CC;
+}
+.notactive{
+    background-color: #21273C;
+    color: #ECEDF0;
+}*/
 .shop_elements{
     width: 100%;
 }
 .shop_elements #s_habitats{
     display: none;
-    
+}
+.shop_elements input{
+    background-color: #5C76CC;
+    color: #BBCBFF;
+    border-radius: 5px;
+    font-family: 'DP';
+    border-color: #21273C;
+    font-size: 20px;
+    margin-left: 50%;
+}
+.shop_elements input:hover{
+    background-color: #BBCBFF;
+    color: #5C76CC;
 }
 
 /*    GAME    */
@@ -132,6 +192,11 @@ header ul li img{
     flex-direction: row;
     justify-content: space-around;
 }
+.game_head div input{
+    font-family: 'DP';
+    background-color: #21273C;
+    color: #ECEDF0;
+}
 #game{
     display: flex;
     flex-direction: row;
@@ -140,14 +205,19 @@ header ul li img{
     min-height: 300px;
     margin:auto;
     max-height: 75vh; /*800px-re állítani ha nem működne*/
-    max-width: 75vh;    
+    max-width: 75vh;
+    background-color: #5C76CC;
+    justify-content: space-between;
+    border-radius: 3.3%;
 }
 .game_box{
-    height: 33%;
-    width: 33%;    
-    border: 2px solid black;
+    height: 30%;
+    width: 30%;    
+    border: 2px solid #21273C;
     display: flex;
     align-content: center;
+    border-radius: 10%;
+    margin:1.5%;
 }
 .game_box img{
     width: 100%;
@@ -156,12 +226,25 @@ header ul li img{
     display: none;
     z-index: 1;
     position: absolute;
-    width: 30vw;
-    height: 20vh;
-    margin: 40vh 35vw;
+    width: 50vw;
+    height: 15vh;
+    margin: 42.5vh 25vw;
     text-align: center;
-    border: 2px solid darkgray;
-    background-color: gray;
-    padding-top: 5vh;
-    font-size: 3vh;
+    border: 2px solid #21273C;
+    background-color: #BBCBFF;
+    color: #21273C;
+    padding-top: 2.5vh;
+    font-size: 20px;
+    border-radius: 5%;
+}
+
+/*FORM*/
+
+.aa, .aa:visited{
+    text-decoration: underline;
+    color:#BBCBFF;
+}
+.aa:hover, .aa:visited:hover{color:#5C76CC}
+form{
+    background-color: #5C76CC;
 }
