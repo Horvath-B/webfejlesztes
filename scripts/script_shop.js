@@ -11,3 +11,4 @@ function show_habitats(){
 }
 document.getElementById('b_cats').addEventListener('click',show_cats)
 document.getElementById('b_habitats').addEventListener('click',show_habitats)
+document.getElementById('buy').addEventListener('click', function(){alert("Nincs elég pénzed!")})
