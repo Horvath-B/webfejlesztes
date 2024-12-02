@@ -15,7 +15,7 @@
         <img src="../images/logo.svg" alt="logo">
         <p style="margin: 0;padding: 0;">WebMacska</p>
     </section>
-    <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post">
+    <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="myform" novalidate>
         <label for="em">E-mailcím:</label><input type="email" name="email" class="arial" id="em"><hr>
         <label for="usr">Felhasználónév:</label><input type="text" name="username" class="arial" id="usr"><hr>
         <label for="psw1">Jelszó:</label><input type="password" name="password" class="arial" id="psw1">
@@ -52,5 +52,41 @@
             <div>GNU AFFERO GENERAL PUBLIC LICENSE</div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="../plugins/validator/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#myform").validate({
+        //ide jön a rules és a messages rész
+            rules: {
+                email: {
+                    required: true,
+                    email: true,
+                },
+                username: {
+                    required: true,
+                    minlength: 3,
+                    maxlength: 15,
+                },
+                password: {
+                    required: true,
+                    minlength: 8,
+                },
+                password_again: {
+                    equalTo: '#psw1'
+                },
+                bith_date: {
+                    required: true,
+                },
+                fav: {
+                    required: true,
+                },
+            },
+            messages: {
+                email: 'Add meg az íméled!',
+            }
+        });
+        });
+    </script>
 </body>
 </html>
