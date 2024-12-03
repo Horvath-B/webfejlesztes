@@ -25,21 +25,21 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="5.26"
-     inkscape:cx="37.737642"
-     inkscape:cy="21.768061"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:cx="37.642586"
+     inkscape:cy="6.5589354"
+     inkscape:window-width="1304"
+     inkscape:window-height="745"
+     inkscape:window-x="54"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="layer2">
     <inkscape:page
        x="0"
        y="0"
        width="19.84375"
        height="13.229166"
        id="page1"
-       margin="0 0 0 0"
+       margin="0"
        bleed="0" />
   </sodipodi:namedview>
   <defs
@@ -56,13 +56,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Réteg 2">
-    <path
-       id="rect201"
-       style="fill:#e1c79e;stroke:#000000;stroke-width:0.264583"
-       d="m -5.1607892,13.959531 c 0.936061,-0.311409 2.1153709,-0.4657 2.9595032,-0.0031 1.73227565,0.949369 0.4241912,3.47416 1.4668555,4.289756 1.1624968,0.909331 2.2861248,-1.017825 3.4621247,-0.515737 1.4192174,0.605929 3.4627362,5.100752 4.5241336,5.610422 0.5840507,0.280456 1.8599188,0.564484 1.8599188,0.564484 0.4774937,0.144919 0.7452347,0.645995 0.6003157,1.123489 -0.144919,0.477494 -0.6459947,0.745235 -1.1234884,0.600316 0,0 -1.4075431,-0.438569 -1.9915938,-0.719024 -1.0613974,-0.509644 -3.4987439,-6.413317 -5.168475,-5.519841 -1.3606093,0.728064 -2.3313088,0.588195 -3.5229369,-0.282613 -1.191629,-0.870808 0.1416561,-3.377304 -0.6193904,-3.966701 -0.7610466,-0.589397 -2.6967986,0.418327 -2.6967986,0.418327 -0.4777896,0.15255 -1.1024923,0.09811 -1.1209169,-0.576455 -0.013625,-0.498815 0.8297041,-0.843329 1.3707485,-1.023323 z"
-       sodipodi:nodetypes="asssssssssssssa" />
-  </g>
+     inkscape:label="Réteg 2" />
   <g
      inkscape:label="Réteg 1"
      inkscape:groupmode="layer"

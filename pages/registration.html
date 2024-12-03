@@ -8,7 +8,9 @@
     <style>@font-face {
         font-family: "DP";
         src: url(../fonts/DynaPuff-Medium.ttf);
-    }</style>
+    }
+    label.error{color: #082EAA;}
+    </style>
 </head>
 <body>
     <section class="f_logo">        
@@ -57,7 +59,6 @@
     <script>
         $(document).ready(function(){
         $("#myform").validate({
-        //ide jön a rules és a messages rész
             rules: {
                 email: {
                     required: true,
@@ -81,9 +82,32 @@
                 fav: {
                     required: true,
                 },
+                check2: {
+                    required: true,
+                },
+                check3: {
+                    required: true,
+                }
             },
             messages: {
-                email: 'Add meg az íméled!',
+                email: {
+                    required: 'Kérlek add meg az íméled!',
+                    email: 'Valódi email címet adj meg!'
+                },
+                username: {
+                    required: 'Kérlek adj meg egy felhasználónevet!',
+                    minlength: 'A felhasználónévnek legalább 3 karakteresnek kell lennie!',
+                    maxlength: 'A felhasználónévnek legfeljebb 10 karakteresnek kell lennie!',
+                },
+                password: {
+                    required: 'Kérlek adj meg egy jelszót!',
+                    minlength: 'A jelszónak legalább 8 karakteresnek kell lennie!',
+                },
+                password_again: {equalTo: 'A két jelszónak azonosnak kell lennie!',},
+                bith_date: {required: 'Kérlek add meg a születési dátumodat!'},
+                fav: {required: 'Kérlek jelöld be a kedvenc macskafajtádat!'},
+                check2: {required: 'El kell fogadnod a szerződési feltételeket!'},
+                check3: {required: 'El kell fogadnod az adatvédelmi szabályzatot!'}
             }
         });
         });

@@ -71,7 +71,7 @@ nav.dropdown{
 header{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-between;
     color: #ECEDF0;
     width: 100%;
 }
@@ -155,7 +155,7 @@ header ul li img{
         }
         #cat_pic{width: 100%;}
         #cat_pic:hover{cursor: pointer;}
-        #dor{/*display: none;*/position: absolute;background-color: #21273C;margin-left: 50%;margin-top: -30%;font-size: 20px;}
+        #dor{display: none;position: absolute;background-color: #21273C;margin-left: 50%;margin-top: -30%;font-size: 20px;}
         #food{
             width:40%
         }
