@@ -24,7 +24,6 @@ nav.dropdown{
     width: 50px;
     height: 50px;
     margin: 1%;
-    /*background-image: url("/images/menu_icon.svg");*/
 }
 .dropdown button{
     cursor: pointer;
@@ -43,7 +42,6 @@ nav.dropdown{
     position: absolute;
     z-index: 1;
     min-width: 150px;
-    /*background-color: rgb(147, 174, 225);*/
 }
 .dropdown div a{
     display: block;
@@ -90,11 +88,12 @@ header{
 .logo img{
     height: 100%;
 }
-.logo p{
+.logo h1{
     margin: 0;
     font-family: 'DP';
     font-size: 30px;
     background-color: #5C76CC;
+    font-weight: 400;
 }
 
 header ul{
@@ -109,7 +108,6 @@ header ul{
 }
 
 header ul li{
-    /*width: 16%;*/
     height: 50px;
     display: flex;
     flex-direction: row;    
@@ -184,7 +182,6 @@ header ul li img{
         flex-direction: row;
         justify-content: space-around;
     }
-    /*#c_prev, #c_next, #h_prev, #h_next{display: none;}*/
 
 /*SHOP*/
 #shop{
@@ -325,11 +322,12 @@ header ul li img{
     min-height: 100px;
     height: 15vh;
 }
-.f_logo p{
+.f_logo h1{
     text-align: center;
     font-size: 40px;
     width: 100%;
     margin:0;
+    font-weight: 400;
 }
 
 form{
@@ -449,7 +447,7 @@ footer .outer{
     .f_logo img{
         height: 20vh;
     }
-    .f_logo p{
+    .f_logo h1{
         font-size: 45px;
     }
 }
@@ -530,7 +528,7 @@ footer .outer{
     .f_logo img{
         height: 25vh;
     }
-    .f_logo p{
+    .f_logo h1{
         font-size: 60px;
     }
     form{        

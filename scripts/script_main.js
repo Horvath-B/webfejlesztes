@@ -5,22 +5,22 @@ ccatt=true;
 hhabb=true;
 function cat_next(){
     num = num + 1;
-    if(num>10) num = 1;
+    if(num>6) num = 1;
     document.getElementById("cat_pic").src=`../images/cat${num}.svg`
 }
 function cat_prev(){
     num = num - 1;
-    if(num==0) num = 10;
+    if(num==0) num = 6;
     document.getElementById("cat_pic").src=`../images/cat${num}.svg`
 }
 function hab_next(){
     h_num = h_num + 1;
-    if(h_num>4) h_num = 1;
+    if(h_num>3) h_num = 1;
     document.getElementById("hab_pic").src=`../images/hab${h_num}.svg`
 }
 function hab_prev(){
     h_num = h_num - 1;
-    if(h_num==0) h_num = 4;
+    if(h_num==0) h_num = 3;
     document.getElementById("hab_pic").src=`../images/hab${h_num}.svg`
 }
 function c_c_s(){

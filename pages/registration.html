@@ -7,6 +7,7 @@
     <meta name="description" content="WebMacska regisztráció. Itt tudsz új felhasználót létrehozni.">
     <title>WebMacska-Regisztráció</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
     <style>@font-face {
         font-family: "DP";
         src: url(../fonts/DynaPuff-Medium.ttf);
@@ -17,7 +18,7 @@
 <body>
     <section class="f_logo">        
         <img src="../images/logo.svg" alt="logo">
-        <p style="margin: 0;padding: 0;">WebMacska</p>
+        <h1>WebMacska</h1>
     </section>
     <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="myform" novalidate>
         <label for="em">E-mailcím:</label><input type="email" name="email" class="arial" id="em"><hr>
@@ -28,9 +29,9 @@
         <hr>
         <p class="pp">
             Kedvenc macskám:<br>
-            <input type="radio" name="fav" value="persian" id="radio_a"><label for="radio_a">Perzsa</label><br>
-            <input type="radio" name="fav" value="brit" id="radio_b"><label for="radio_b">Brit rövidszőrű</label><br>
-            <input type="radio" name="fav" value="maine_coon" id="radio_c"><label for="radio_c">Maine coon</label><br>
+            <label for="radio_a">Perzsa</label><input type="radio" name="fav" value="persian" id="radio_a"><br>
+            <label for="radio_b">Brit rövidszőrű</label><input type="radio" name="fav" value="brit" id="radio_b"><br>
+            <label for="radio_c">Maine coon</label><input type="radio" name="fav" value="maine_coon" id="radio_c"><br>
         </p>
         <hr>
         <p class="pp">

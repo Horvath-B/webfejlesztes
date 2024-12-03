@@ -1,0 +1,12 @@
+Készítette: Horváth Bence
+
+Oldal URL címe: 
+
+A weboldal egy macskagyűjtögetős és gondozós játékoldal. Lehet etetni, simogatni a macskát, van egy bolt, ahol új kinézetet lehet venni és egy oldal, ahol egérfogós minigame van.
+
+Saját js kód:
+	A minigame.html oldalon, body végén belinkelve, egyébként külön fájlban a scripts mappában. Ez működteti az egérfogó játékot.
+	A main.html oldalon, szintén belinkelve, külön fájlban. Ez változtatja a macska és a kosara kinézetét és játssza le az etető animációt (sok képet egymás után, gyorsan megjelenít)
+	A shop.html oldalon, szintén belinkelve, külön fájlban. Ez vált bolt lapjai között.
+
+Webfont: DynaPuff-Medium webfontot használtam az összes oldalon, minden szöveg ilyen, kivéve az inputok bemenete. A head-ben vannak belinkelve.
