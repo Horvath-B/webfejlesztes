@@ -57,7 +57,6 @@ function feed(){
     if(f<16) setTimeout(feed,200)
     else{
         f = 1;
-        //document.getElementById("f_pic").src = `../images/feeding/f0.svg`;
     }
 }
 deg = 0.5;

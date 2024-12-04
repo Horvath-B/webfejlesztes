@@ -1,11 +1,10 @@
 Készítette: Horváth Bence
 
-Oldal URL címe: https://horvath-b.github.io/webfejlesztes/
-
+Oldal URL címe: https:  
 A weboldal egy macskagyűjtögetős és gondozós játékoldal. Lehet etetni, simogatni a macskát, van egy bolt, ahol új kinézetet lehet venni és egy oldal, ahol egérfogós minigame van.
 
 Saját js kód:
-	A minigame.html oldalon, body végén belinkelve, egyébként külön fájlban a scripts mappában. Ez működteti az egérfogó játékot.
+	A minigame.html oldalon, body végén belinkelve, egyébként külön fájlban a scripts mappában. Ez működteti az egérfogó játékot. Start gomb megnyomására elindíja a jatek_indito függvényt, ami kezdőértékre állítja a változókat és elindítja a jatek függvényt. A jatek függvény eltünteti az előző egeret (csak akkor ha sokadjára van meghívva, különben nincs mit) és levon egy életet, majd kér egy véletlenszámot (a randomszámgenerátort a w3school oldaláról néztem), ami alapján elhelyezi az új egeret, ehhez lecseréli az adott hely üres képét az egér képére. Ezután kiírja az aktuális életek számát, majd meghívja saját magát 'speed' idő múlva, ha az életek száma nagyobb egyenlő mint 0. Ha közben a játékos megnyom egy helyet a táblán meghívódik a hely függvénye. Az megnézi, hogy az adott helyen van-e az egér és ha igen, akkor eltünteti azt, ad egy pontot, egy életet, hogy ugyanannyi legyen mint az előző körben, nullázza az egér helyét, hogy ne lehessen újra rákattintani, kiírja a pontszámot és megszorozza a 'speed' változót 0,9-cel, hogy a következő körben már kevesebb idő legyen az egérre kattintani. Ha az élet nulla alá csökken, meghívódik a game_end függvény, ez lecseréli a tábla összes helyét üresre, nullázza az egér helyét, újra megjeleníti az indító gombot és megjeleníti az eredményt az oldal közepén.
 	A main.html oldalon, szintén belinkelve, külön fájlban. Ez változtatja a macska és a kosara kinézetét és játssza le az etető animációt (sok képet egymás után, gyorsan megjelenít)
 	A shop.html oldalon, szintén belinkelve, külön fájlban. Ez vált bolt lapjai között.
 

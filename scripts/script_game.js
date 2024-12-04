@@ -116,6 +116,7 @@ function game_end(){
     for(i = 1; i < 10; i++){
         document.getElementById(`mouse${i}`).src = "../images/empty.svg";
     }
+    place = 0;
     document.getElementById('game_start').style.display = 'block';
     document.getElementById('game_end').style.display = 'block';
     document.getElementById('game_end').innerHTML = `Vége a játéknak<br>Pontszámod: ${point}`;
@@ -130,7 +131,7 @@ function jatek(){
     place = Math.floor(Math.random() * 9)+1; /*w3_schools*/
     document.getElementById(`mouse${place}`).src = "../images/mouse.svg";
     document.getElementById('health_text').innerHTML = `Élet: ${health}`;
-    if(health>0)setTimeout(`jatek()`,speed);
+    if(health>=0)setTimeout(`jatek()`,speed);
     else game_end();    
 }
 function jatek_indito(){

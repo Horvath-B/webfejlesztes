@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     font-family: 'DP';
     align-items: center;
-    min-height: 100vh; /*footer mindig alul: https://www.30secondsofcode.org/css/s/footer-at-the-bottom/*/
+    min-height: 100vh;
 }
 a{text-decoration: none;}
 a:visited{color: #ECEDF0;}
@@ -64,6 +64,7 @@ nav.dropdown{
 #current{
     background-color: #BBCBFF;
     color: #5C76CC;
+    border: solid 1px #21273C
 }
 
 header{
@@ -137,7 +138,6 @@ header ul li img{
 }
 #garden input{font-family: 'DP';font-size: 12px;background-color: #21273C;color: #ECEDF0; border-radius: 5px; }
 #garden input:hover{background-color: #5C76CC; color: #BBCBFF; cursor: pointer;}
-/*#garden div{border: #21273C solid 1px;}*/
 #g_e{
     width: 100%;
     display: flex;
@@ -542,6 +542,7 @@ article#faq{
     }
 
     /*MAIN*/
+    #garden input{font-size: 16px;}
     #g_e{width: 75%;}
     #g_b_1{width: 25%;flex-direction: column;}
 
