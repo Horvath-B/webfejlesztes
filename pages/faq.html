@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Horváth Bence">
+    <meta name="description" content="WebMacska főoldal. Tudod etetni, simogatni a macskád és változtatni a kinéztét.">
+    <title>WebMacska-GYIK</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <style>@font-face {
+        font-family: "DP";
+        src: url(../fonts/DynaPuff-Medium.ttf);
+    }</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>WebMacska</h1>
+            <img src="../images/logo.svg" alt="a weboldal logója">
+        </div>
+        <nav class="dropdown">
+            <button>Menü</button>
+            <div>
+                <a href="main.html">Macskád</a>
+                <a href="shop.html">Bolt</a>
+                <a href="minigame.html">Egérfogó</a>
+                <a href="#" id="current">GYIK</a>
+                <a href="../index.html">Kijelentkezés</a>
+            </div>
+        </nav>
+        <ul>
+            <li><p>Cirmi</p></li>
+            <li><img src="../images/food_icon.svg" alt="éhség ikon"><p class="mobil">Éhség: </p><p id="%"> 80%</p></li>
+            <li><img src="../images/happiness_icon.svg" alt="hangulat ikon"><p class="mobil">Hangulat: </p><p id="%2">76%</p></li>
+            <li><img src="../images/coin_icon.svg" alt="pénz ikon"><p class="mobil">Pénz: </p><p>547</p></li>
+        </ul>
+    </header>
+    
+    <article id="faq">
+        <h2>Gyakran ismételt kérdések</h2>
+        <ol>
+            <li><a href="#1">Mit lehet csinálni az oldalon?</a></li>
+            <li><a href="#2">Milyen gyorsan csökkennek a macska mutatói?</a></li>
+            <li><a href="#3">Mi lesz, ha nulla százalékra esnek a macska mutatói?</a></li>
+            <li><a href="#4">Mire való a bolt?</a></li>
+            <li><a href="#5">Hogyan tudok pénzt szerezni?</a></li>
+        </ol>
+        
+        <section class="long">
+            <h2 id="1">Mit lehet csinálni az oldalon?</h2>
+            <p>Az oldalon egy macskát tudsz gondozni. Tudod simogatni és etetni, ezek a mutatók idővel csökkennek, úgyhogy nem árt sűrűn belépned, hogy a macskád boldog legyen.</p>
+            <p>A weboldal mögött nincs rendes szerver, ezért az előbb említett és ezután megemlített funkciók többsége valójában nem működik.</p>
+        </section>
+        <section>
+            <h2 id="2">Milyen gyorsan csökkennek a macska mutatói?</h2>
+            <p>A macska mutatói húsz százalékot csökkennek naponta.</p>
+        </section>
+        <section>
+            <h2 id="3">Mi lesz, ha nulla százalékra esnek a macska mutatói?</h2>
+            <p>Nem történik semmi. Mivel a macskád nem igazi nem fog elkóborolni bánatában és nem is fog éhen halni.</p>
+        </section>
+        <section>
+            <h2 id="4">Mire való a bolt?</h2>
+            <p>A boltban új kinézeteket és kosarakat tudsz venni a macskádnak aranyért.</p>
+        </section>
+        <section>
+            <h2 id="5">Hogyan tudok pénzt szerezni?</h2>
+            <p>Aranyat úgy szerezhetsz, ha játszol az egérfogó minigame-mel. Az elért pontszámodat megkapod aranyban.</p>
+        </section>
+    </article>
+
+    <footer>
+        <div class="outer">
+            <div>Készítette:</div>
+            <div>Horváth Bence</div>
+        </div>
+        <div class="outer">
+            <div>E-mail:</div>
+            <div>bence.horvath5@ stud.uni-corvinus.hu</div>
+        </div>
+        <div class="outer">
+            <div>Copyright (C):</div>
+            <div>GNU AFFERO GENERAL PUBLIC LICENSE</div>
+        </div>
+    </footer>
+</body>
+</html>

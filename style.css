@@ -406,6 +406,47 @@ footer .outer{
     width: 30%;
     margin: 1.5%;
 }
+
+/*FAQ*/
+article#faq{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+    #faq h1{
+        letter-spacing: 2px;
+    }
+    #faq ol li{
+        list-style-type: lower-roman;
+    }
+        #faq ol li a{
+            font-size: 16px;
+            line-height: 2em;
+        }
+        #faq ol li a:visited{
+            color:#BBCBFF;
+        }
+        #faq ol li a:hover{
+            color: #5C76CC;
+            font-style: italic;
+        }
+    #faq section{
+        flex-basis: 98%;
+        margin: 1%;
+        border:#5C76CC solid 2px;
+        border-radius: 5px;
+        padding: 2%;
+    }
+        #faq h2{
+            text-decoration: underline;
+        }
+        #faq p{
+            line-height: 1.5em;
+            letter-spacing: 0.5px;
+            font-size: 16px;
+            text-indent: 1.5em;
+        }
+
 @media only screen and (min-width: 600px) {
     /* tabletre vonatkozó beállítások */
     header{
@@ -495,7 +536,7 @@ footer .outer{
         margin-bottom: 0.5%;
         padding: 5px;
         border-radius: 5px;
-        width: 23%;
+        flex-basis: 18%;
         text-align: center;
     }
 
@@ -537,4 +578,18 @@ footer .outer{
 
     /*FOOTER*/
     footer{font-size: 13px;}
+
+    /*FAQ*/
+    article#faq{
+        flex-direction: row;
+        width: 80%;
+    }
+        #faq h2{flex-basis: 100%;}
+        #faq ol{flex-basis: 100%;}
+        #faq section{
+            flex-basis: 30%;
+            margin: 1.5%;
+            height: fit-content;
+        }
+        #faq section.long{flex-basis: 63%;}
 }

@@ -1,6 +1,6 @@
 Készítette: Horváth Bence
 
-Oldal URL címe: 
+Oldal URL címe: https://horvath-b.github.io/webfejlesztes/
 
 A weboldal egy macskagyűjtögetős és gondozós játékoldal. Lehet etetni, simogatni a macskát, van egy bolt, ahol új kinézetet lehet venni és egy oldal, ahol egérfogós minigame van.
 
@@ -10,3 +10,7 @@ Saját js kód:
 	A shop.html oldalon, szintén belinkelve, külön fájlban. Ez vált bolt lapjai között.
 
 Webfont: DynaPuff-Medium webfontot használtam az összes oldalon, minden szöveg ilyen, kivéve az inputok bemenete. A head-ben vannak belinkelve.
+
+Átvett megoldás:
+	A hamburger menüt a w3school alapján csináltam, működésben megegyezik az ottanival
+	
